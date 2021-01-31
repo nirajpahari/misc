@@ -1,7 +1,11 @@
+### Usage: python resize.py <directory of image>
+### Example: python resize.py ~/Desktop/MyImages/
+
 import os, sys
 from PIL import Image
 import glob
 
+# Resize size (will maintain the aspect ratio)
 size = 416, 416
 
 for dirname in sys.argv[1:]:
